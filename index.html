@@ -5,8 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/logo.png" alt="Star Wars">
+            </div>
+            <h3 class="title--small">
+                As duas primeiras trilogias em ordem cronológica.
+            </h3>
+        </div>
+    </section>
+    <section class="movies">
+        <nav class="movies__tabs">
+            <button data-tab-button="primeira-trilogia" class="movies__tabs__button movies__tabs__button--is-active">
+                Primeira trilogia
+            </button>
+            <button data-tab-button="segunda-trilogia" class="movies__tabs__button">
+                Segunda trilogia
+            </button>
+        </nav>
+        <ul data-tab-id="primeira-trilogia" class="movies__list movies__list--is-active">
+            <li class="movies__list__item">
+                <a href="https://www.youtube.com/watch?v=-JdrAxMHzyA" target="_blank">
+                    <img src="./dist/images/A-Ameaça-Fantasma-.jpeg" alt="Ameaça fantasma">
+                    <p class="text--small">Trailer</p>
+                </a>
+            </li>
+            <li class="movies__list__item">
+                <a href="https://www.youtube.com/watch?v=gYbW1F_c9eM" target="_blank">
+                    <img src="./dist/images/Ataque-dos-Clones.jpeg" alt="Ataque dos clones">
+                    <p class="text--small">Trailer</p>
+                </a>
+            </li>
+            <li class="movies__list__item">
+                <a href="https://www.youtube.com/watch?v=I1e-Ft2gBZ0" target="_blank">
+                    <img src="./dist/images/A-Vingança-dos-Sith.jpeg" alt="Vingança de sith">
+                    <p class="text--small">Trailer</p>
+                </a>
+            </li>
+        </ul>
+        <ul data-tab-id="segunda-trilogia" class="movies__list">
+            <li class="movies__list__item">
+                <a href="https://www.youtube.com/watch?v=vZ734NWnAHA" target="_blank">
+                    <img src="./dist/images/Uma-Nova-Esperança.jpeg" alt="Uma Nova Esperança">
+                    <p class="text--small">Trailer</p>
+                </a>
+            </li>
+            <li class="movies__list__item">
+                <a href="https://www.youtube.com/watch?v=spIUd6vbAdU" target="_blank">
+                    <img src="./dist/images/O-Império-Contra-Ataca.jpeg" alt="O Império Contra-Ataca">
+                    <p class="text--small">Trailer</p>
+                </a>
+            </li>
+            <li class="movies__list__item">
+                <a href="https://www.youtube.com/watch?v=T0_ttlBLd9g" target="_blank">
+                    <img src="./dist/images/O-Retorno-de-Jedi.jpeg" alt="O Retorno de Jedi">
+                    <p class="text--small">Trailer</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.hero {
+    max-width: 300vw;
+    min-height: 70vh;
+    background-image: url(../images/hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            padding-top: 150px;
+            max-width: 300px;
+            margin: 0 auto 38px;
+        }
+
+        .title--small {
+            text-transform: uppercase;
+            margin-bottom: 64px;
+        }
+    }
+}

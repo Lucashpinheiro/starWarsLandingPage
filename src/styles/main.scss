@@ -1,0 +1,45 @@
+@use 'variaveis';
+@use 'hero';
+@use 'movies';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$backgroundColor;
+}
+
+.text--big {
+    font-size: 18px;
+    color: variaveis.$letters;
+}
+
+.text { 
+    font-size: 16px;
+    color: variaveis.$letters;
+}
+
+.text--small {
+    font-size: 12px;
+    color: variaveis.$letters;
+}
+
+.title--big {
+    font-size: 42px;
+    color: variaveis.$letters;
+}
+
+.title {
+    font-size: 28px;
+    color: variaveis.$letters;
+}
+
+.title--small {
+    font-size: 18px;
+    color: variaveis.$letters;
+}
