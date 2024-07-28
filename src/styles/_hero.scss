@@ -2,22 +2,58 @@
     max-width: 300vw;
     min-height: 70vh;
     background-image: url(../images/hero.jpeg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     text-align: center;
+
     
     &__content {
         max-width: 640px;
 
         &__branding {
-            padding-top: 150px;
             max-width: 300px;
-            margin: 0 auto 38px;
+            margin: 0 auto;
         }
 
         .title--small {
             text-transform: uppercase;
-            margin-bottom: 64px;
         }
+    }
+    &__disclaimer {
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 32px;
+        display: inline-block;
+
+        &__title {
+            padding-bottom: 16px;
+        }
+
+        &__text {
+            padding-bottom: 24px;
+        }
+
+        &__play {
+            display: flex;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        background-image: url(../images/clon.jpeg);
+        background-size: contain;
+
+        &__disclaimer {
+            &__title{
+                margin-bottom: 600px;
+            }
+        }
+
     }
 }
